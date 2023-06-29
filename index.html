@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>자바스크립트 연습장</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h2 id="hello">안녕하세요</h2>
-    <h2 id="hi">올때메로나</h2>
-
-    <script>
-        document.getElementById('hello').innerHTML = '안녕';
-        document.getElementById('hi').innerHTML = '올때바밤바';
-        // 문자를 변경할 때
-        document.getElementById('hi').style.fontsize = '30px';
-        //폰트 사이즈 변경할 떄
+    <div class="alert-box" id="alert">
+       <p>Alert 박스</p> 
+        <button onclick="document.getElementById('alert').style.display='none'">닫기</button>
+    </div>
+    <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
+    
+     <script>
+      
     </script>
 </body>
 
